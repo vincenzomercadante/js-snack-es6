@@ -18,12 +18,11 @@ const vips = [
 
 // ciclo che per ogni vip iterato me lo inserisce all'interno del nuovo array sottoforma di oggetto
 const vipsInvited = vips.map((vip, posto) => {
-  vip = {
+  return {
     tavolo: nomeTavolo,
     nome: vip,
-    postoOccupato: posto,
+    postoOccupato: posto + 1,
   };
-  return vip;
 });
 
 console.log(vipsInvited);
