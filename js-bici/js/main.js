@@ -28,15 +28,15 @@ const bici = [
 
 // variabili per calcolare la bici con il peso più leggero
 let pesoMinore = bici[0].pesoGrammi;
-let lightBici;
+let lighterBike;
 
 // ciclo che mi cerca
 for (let bicicletta of bici) {
-  if (bicicletta.pesoGrammi < pesoMinore) lightBici = bicicletta;
+  if (bicicletta.pesoGrammi < pesoMinore) lighterBike = bicicletta;
 }
 
 // decostructuring
-const { nome, pesoGrammi } = lightBici;
+const { nome, pesoGrammi } = lighterBike;
 // stampa in console
 console.log(
   `La bici più leggera è la ${nome} con il peso di ${pesoGrammi} grammi`
